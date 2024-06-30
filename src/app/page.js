@@ -10,7 +10,7 @@ export default function Component() {
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
             <MountainIcon className="h-6 w-6" />
-            <span className="text-lg font-bold">Empowered</span>
+            <span className="text-lg font-bold">Masculine Mastery</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#" className="text-sm font-medium hover:underline" prefetch={false}>
