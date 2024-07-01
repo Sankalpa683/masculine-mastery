@@ -1,11 +1,18 @@
 import Link from "next/link";
+import Head from 'next/head'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
+
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+	  <>
+      <Head>
+        <link rel="icon" href="/logo.jpg" />
+        <title>Masculine Mastery - Official Website</title>
+      </Head>
+      <div className="flex flex-col min-h-[100dvh]">
       <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-sm">
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2" prefetch={false}>
@@ -347,6 +354,7 @@ export default function Component() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
 
